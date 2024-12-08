@@ -18,8 +18,9 @@
  *   5, 10 => 50
  *   5, 5  => 25
  */
-function getRectangleArea(/* width, height */) {
-  throw new Error('Not implemented');
+function getRectangleArea(width, height) {
+  const RectangleArea = width * height;
+  return RectangleArea;
 }
 
 /**
@@ -33,8 +34,9 @@ function getRectangleArea(/* width, height */) {
  *   3.14 => 19.729201864543903
  *   0    => 0
  */
-function getCircleCircumference(/* radius */) {
-  throw new Error('Not implemented');
+function getCircleCircumference(radius) {
+  const circleCircumference = 2 * Math.PI * radius;
+  return circleCircumference;
 }
 
 /**
@@ -49,8 +51,10 @@ function getCircleCircumference(/* radius */) {
  *  10, 0  => 5
  *  -3, 3  => 0
  */
-function getAverage(/* value1, value2 */) {
-  throw new Error('Not implemented');
+function getAverage(value1, value2) {
+  const num1 = value1 / 2;
+  const num2 = value2 / 2;
+  return num1 + num2;
 }
 
 /**
@@ -68,8 +72,9 @@ function getAverage(/* value1, value2 */) {
  *   (0,0) (1,0)    => 1
  *   (-5,0) (10,-10) => 18.027756377319946
  */
-function getDistanceBetweenPoints(/* x1, y1, x2, y2 */) {
-  throw new Error('Not implemented');
+function getDistanceBetweenPoints(x1, y1, x2, y2) {
+  const distBetweenPoints = Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2);
+  return distBetweenPoints;
 }
 
 /**
